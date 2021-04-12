@@ -10,10 +10,10 @@ GO_FILES := $(shell find $(shell go list -f '{{.Dir}}' $(GO_PACKAGES)) -name \*.
 
 GIT = git
 
-tomo:
-	go run build/ci.go install ./cmd/tomo
+sdx:
+	go run build/ci.go install ./cmd/sdx
 	@echo "Done building."
-	@echo "Run \"$(GOBIN)/tomo\" to launch tomo."
+	@echo "Run \"$(GOBIN)/sdx\" to launch sdx."
 
 gc:
 	go run build/ci.go install ./cmd/gc

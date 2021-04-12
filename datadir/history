@@ -1,0 +1,9 @@
+eth.blockNumber
+admin.nodeInfo
+miner.setEtherbase(eth.coinbase)
+admin.nodeInfo
+eth.blockNumber
+miner.setEtherbase(eth.accounts[0])
+eth.defaultAccount = eth.accounts[0]
+eth.getBalance(eth.accounts[0])
+eth.blockNumber

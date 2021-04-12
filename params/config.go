@@ -24,7 +24,7 @@ import (
 )
 
 var (
-	TomoMainnetGenesisHash = common.HexToHash("9326145f8a2c8c00bbe13afc7d7f3d9c868b5ef39d89f2f4e9390e9720298624") // Tomo Mainnet genesis hash to enforce below configs on
+	TomoMainnetGenesisHash = common.HexToHash("811311c263f806cb9f44c48d011886a190e907b603e363d1f6f83c9bf93d5427") // Swapdex Mainnet genesis hash to enforce below configs on
 	MainnetGenesisHash     = common.HexToHash("8d13370621558f4ed0da587934473c0404729f28b0ff1d50e5fdd840457a2f17") // Mainnet genesis hash to enforce below configs on
 	TestnetGenesisHash     = common.HexToHash("dffc8ae3b45965404b4fd73ce7f0e13e822ac0fc23ce7e95b42bc5f1e57023a5") // Testnet genesis hash to enforce below configs on
 )
@@ -32,7 +32,7 @@ var (
 var (
 	// TomoChain mainnet config
 	TomoMainnetChainConfig = &ChainConfig{
-		ChainId:        big.NewInt(88),
+		ChainId:        big.NewInt(999),
 		HomesteadBlock: big.NewInt(1),
 		EIP150Block:    big.NewInt(2),
 		EIP150Hash:     common.HexToHash("0x0000000000000000000000000000000000000000000000000000000000000000"),
@@ -40,11 +40,11 @@ var (
 		EIP158Block:    big.NewInt(3),
 		ByzantiumBlock: big.NewInt(4),
 		Posv: &PosvConfig{
-			Period:              2,
+			Period:              1,
 			Epoch:               900,
-			Reward:              250,
+			Reward:              10,
 			RewardCheckpoint:    900,
-			Gap:                 5,
+			Gap:                 450,
 			FoudationWalletAddr: common.HexToAddress("0x0000000000000000000000000000000000000068"),
 		},
 	}
